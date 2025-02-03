@@ -1,17 +1,15 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import '../Styles/Navbar.css'; // Import your CSS file here
 
-function Navbar() {
-    return(
-        <>
-            <nav>
-                <ul>
-                    <li><link to="/" />Home</li>
-                    <li><link to="/products" />Products</li>
-                    <li><link to="/contact" />Contact us</li>
-                </ul>
-            </nav>
-        </>
-    );
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <a href="/">Home</a>
+      <a href="/products">Products</a>
+      <a href="/contact">Contact</a>
+    </div>
+  );
 };
 
-export default Navbar
+export default Navbar;
