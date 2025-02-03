@@ -1,0 +1,25 @@
+/* Navbar.css */
+.navbar {
+    position: absolute; /* Or use position: fixed if you want it to stay on screen when scrolling */
+    top: 20px; /* Adjust the space from the top */
+    right: 20px; /* Adjust the space from the right */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 10; /* Ensure the navbar stays above the hero section */
+  }
+  
+  /* Style for Navbar Links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
