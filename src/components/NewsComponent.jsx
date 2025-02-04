@@ -52,7 +52,10 @@ const newsData = [
 
 const NewsComponent = () => {
   return (
-    <div className="news-container">
+    <>
+      <h2>News & Articles</h2>
+      <div className="news-container">
+      
       {newsData.map((newsItem) => (
         <NewsCard
           key={newsItem.id}
@@ -63,6 +66,8 @@ const NewsComponent = () => {
         />
       ))}
     </div>
+    </>
+    
   );
 };
 
