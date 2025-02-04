@@ -1,0 +1,65 @@
+/* NewsComponent.css */
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Spacing between the cards */
+  margin: 20px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.news-card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-card-content {
+  padding: 15px;
+}
+
+.news-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.news-card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.news-card-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-card-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .news-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .news-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}

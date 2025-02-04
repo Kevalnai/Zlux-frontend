@@ -3,11 +3,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './Pages/Home';
 import Navbar from './components/Navbar';
-import Contact from './Pages/Contact';
+import Support from './Pages/Support';
 import Products from './Pages/Products';
-import NotFound from './Pages/NotFound';
+import Zlux from './Pages/Zlux';
+import Pricing from './Pages/Pricing';
 import HeroSection from './components/HeroSection';
 import Body from './components/Body'; // Importing the Body component
+import NewsComponent from './components/NewsComponent';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,19 +33,23 @@ function Content() {
   return (
     <>
       {/* Conditionally render HeroSection only on the Home page */}
-      {isHomePage && <HeroSection />}
+      
 
       {/* Conditionally render Navbar only if the page isn't one of the 'noNavbarPaths' */}
       {!isNoNavbar && <Navbar />}
+      {!isNoNavbar && <Body />}
 
       {/* Add Body component, always displayed after HeroSection on Home page */}
-      {isHomePage && <Body />} {/* Show Body only on the Home page */}
-
+      {/* Show Body only on the Home page */}
+      <NewsComponent />
+      <Footer />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/zlux" element={<Zlux />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/support" element={<Support />} />
+        
       </Routes>
     </>
   );

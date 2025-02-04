@@ -1,25 +1,62 @@
 /* Navbar.css */
 .navbar {
-    position: absolute; /* Or use position: fixed if you want it to stay on screen when scrolling */
-    top: 20px; /* Adjust the space from the top */
-    right: 20px; /* Adjust the space from the right */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.2rem;
-    z-index: 10; /* Ensure the navbar stays above the hero section */
-  }
-  
-  /* Style for Navbar Links */
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between; /* Space between left & right sections */
+  align-items: center;
+}
+
+/* Left Section: Logo + Links */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between links */
+}
+
+.logo {
+  height: 40px; /* Adjust logo size */
+}
+
+/* Navbar Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Right Section: Icons + Dropdown */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons and dropdown */
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.language-dropdown {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.language-dropdown option {
+  background: black;
+  color: white;
+}

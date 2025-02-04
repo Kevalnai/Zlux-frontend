@@ -6,8 +6,7 @@ function Home(){
     return(
         <>
             <div className="home">
-            <h1> Welcome to ZAILux </h1>
-            <p>Discover the perfect lighting solution  for your spaces. </p>
+                
             </div>
         </>
     );
