@@ -6,10 +6,8 @@ const Body = () => {
   return (
     <div className="body-container">
       <section className="body-intro">
-        <h2>Welcome to Our Website</h2>
-        <p>
-          This is a place where you can learn more about our services, browse our products, and get in touch with us.
-        </p>
+        
+        
       </section>
 
       
