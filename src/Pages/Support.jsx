@@ -4,8 +4,8 @@ function Contact(){
 
     return(
         <>
-            <div className="contact">
-            <h1> Welcome to Contact </h1>
+            <div className="support">
+            <h1> Welcome to Support </h1>
             <p>Form </p>
             </div>
         </>

@@ -4,9 +4,9 @@ function NotFound(){
 
     return(
         <>
-            <div className="notfound">
-            <h1> NotFound </h1>
-            <p>404 </p>
+            <div className="zlux">
+            <h1> zlux </h1>
+            <p> </p>
             </div>
         </>
     );
