@@ -36,13 +36,14 @@ function Content() {
       
 
       {/* Conditionally render Navbar only if the page isn't one of the 'noNavbarPaths' */}
-      {!isNoNavbar && <Navbar />}
-      {!isNoNavbar && <Body />}
+      {/* {!isNoNavbar && <Navbar />}
+      {!isNoNavbar && <Body />} */}
 
       {/* Add Body component, always displayed after HeroSection on Home page */}
       {/* Show Body only on the Home page */}
-      <NewsComponent />
-      <Footer />
+      {isHomePage && <NewsComponent /> }
+      
+     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
@@ -51,6 +52,7 @@ function Content() {
         <Route path="/support" element={<Support />} />
         
       </Routes>
+      <Footer />
     </>
   );
 }
