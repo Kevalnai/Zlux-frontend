@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // LightingRoom.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';

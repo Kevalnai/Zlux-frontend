@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // NewsCard.jsx
 import React from 'react';
 import PropTypes from 'prop-types';

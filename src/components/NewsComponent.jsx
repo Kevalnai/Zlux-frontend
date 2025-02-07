@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // NewsComponent.jsx
 import React from 'react';
 
