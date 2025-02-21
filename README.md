@@ -28,21 +28,27 @@ Adjust light intensities, materials, and colors
 Export designs in image and PDF formats
 User authentication for saving projects
 Installation and Setup
+
 Clone the Repository this is the clone link given below 
 
-git clone https://github.com/yourusername/Dialux-Clone.git
+git clone https://github.com/yourusername/Dialux-Clone.git 
 cd Dialux-Clone
-
 Install Dependencies run below code it will install all used dependencies automatically
 npm install
 Configure Environment Variables
+
 Create a .env file and add the following details:
+
 .env file contails you sensetive information like API keys Access Keys PORT and Database string
-PORT=5000
+
+PORT=3000
+
 MONGO_URI=your_mongodb_connection_string
+
 Start the Server
 
 npm start
+
 The application will run at http://localhost:3000
 
 
