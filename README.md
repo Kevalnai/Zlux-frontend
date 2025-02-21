@@ -11,11 +11,16 @@ Dialux Clone - Lighting Design Tool
 Project Overview
 This project is a web-based clone of the Dialux lighting design tool. It allows users to create, visualize, and simulate lighting designs for indoor and outdoor spaces. Users can adjust light sources, experiment with materials, and export lighting designs. The system is built using React, Three.js (for 3D rendering), and Node.js for backend functionalities.
 
-Technologies Used
+Technologies Used:
+
 Database: MongoDB, Mongoose
+
 Frontend: React, Bootstrap
+
 3D Rendering: Three.js
+
 Version Control: Git, GitHub
+
 Features
 Create and save lighting designs
 3D visualization of lighting setups
