@@ -41,3 +41,15 @@ npm start
 The application will run at http://localhost:3000
 
 
+
+## License
+
+This project is licensed under the **MIT License**.
+
+### Why MIT License?
+
+I have chosen the **MIT License** because it is one of the most permissive open-source licenses available. I want to keep this project as open source so anyone who want to learn and take reference for educational puopose can take it with proper credits, It allows anyone to freely use, modify, and distribute the project with minimal restrictions. This makes it ideal for open-source collaboration.
+
+2025 Keval Nai
+
+
